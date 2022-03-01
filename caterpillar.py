@@ -79,7 +79,7 @@ def start_game():
     display_score(score)
     place_leaf()
 
-    while True:
+    while True: #This is the logic of the game on what happens to the caterpillar
         caterpillar.forward(caterpillar_speed)
         if caterpillar.distance(leaf) < 20:
             place_leaf()
@@ -92,19 +92,20 @@ def start_game():
             game_over()
             break
 
-def move_up():
+def move_up(): # This defines the moves of the caterpillar
     if caterpillar.heading() == 0 or caterpillar.heading() == 180:
         caterpillar.setheading(90)
 
-def move_down():
+def move_down(): # This defines the moves of the caterpillar
     if caterpillar.heading() == 0 or caterpillar.heading() == 180:
         caterpillar.setheading(270)
 
-def move_left():
+def move_left(): # This defines the moves of the caterpillar
     if caterpillar.heading() == 90 or caterpillar.heading() == 270:
         caterpillar.setheading(180)
 
-def move_right():
+
+def move_right():  # This defines the moves of the caterpillar
     if caterpillar.heading() == 90 or caterpillar.heading() == 270:
         caterpillar.setheading(0)
 
