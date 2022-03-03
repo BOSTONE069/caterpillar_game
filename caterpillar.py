@@ -6,7 +6,7 @@ t.bgcolor('yellow') #this is for defining the background color
 
 caterpillar = t.Turtle() # this is for defining the turtle element
 caterpillar.shape('square')
-caterpillar.speed(0)
+caterpillar.speed(0) #This defines the speed of the caterpillar
 caterpillar.penup()
 caterpillar.hideturtle()
 
@@ -64,7 +64,7 @@ def display_score(current_score): #This function shows the score in the game
     score_turtle.write(str(current_score), align='right', font=('Arial',40,'bold'))
 
 
-def start_game():
+def start_game(): #this defines the logic of the game at the start
     global game_started
     if game_started:
         return
