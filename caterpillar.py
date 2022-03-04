@@ -109,7 +109,7 @@ def move_right():  # This defines the moves of the caterpillar
     if caterpillar.heading() == 90 or caterpillar.heading() == 270:
         caterpillar.setheading(0)
 
-t.onkey(start_game,'space')
+t.onkey(start_game,'space') This is used to
 t.onkey(move_up,'Up')
 t.onkey(move_right,'Right')
 t.onkey(move_down,'Down')
